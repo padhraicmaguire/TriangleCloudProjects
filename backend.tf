@@ -1,7 +1,7 @@
 terraform {
   backend "remote" {
   	hostname = "app.terraform.io"
-	organisation = "triangle"
+	organization = "triangle"
 	
 	workspaces {
 		name = "trianglecloud"
