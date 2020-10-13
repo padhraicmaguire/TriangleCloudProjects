@@ -8,23 +8,18 @@ variable "ami_id" {
   default     = "ami-0f38cdec7da648424"
 }
 
-variable "count" {
-  description = "How many servers to provision"
-  default     = 1
-}
-
 variable "instance_type" {
   description = "type of EC2 instance to provision."
   default     = "t2.micro"
 }
 
 variable "name" {
-  description = "name to pass to Name tag"
+  description = "TFE_Deployment"
   default     = ""
 }
 
 variable "owner" {
-  description = ""
+  description = "Padhraic Maguire"
 }
 
 variable "key_name" {
