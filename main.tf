@@ -6,7 +6,7 @@ resource "aws_instance" "jenkins-demo" {
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
 
-  tags {
+  tags = {
     Name  = "${var.name}"
     Owner = "${var.owner}"
     TTL   = "${var.ttl}"
