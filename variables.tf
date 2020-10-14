@@ -19,11 +19,13 @@ variable "name" {
 }
 
 variable "owner" {
-  description = "Padhraic_Maguire"
+  description = "Owner"
+  default     = "Padhraic_Maguire"
 }
 
 variable "key_name" {
-  description = ""
+  description = "key name"
+  default     = "mykeys"
 }
 
 variable "ttl" {
