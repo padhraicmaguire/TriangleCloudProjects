@@ -19,7 +19,7 @@ variable "name" {
 }
 
 variable "owner" {
-  description = "Padhraic Maguire"
+  description = "Padhraic_Maguire"
 }
 
 variable "key_name" {
