@@ -3,12 +3,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "jenkins-demo" {
-  count         = "${var.count}"
   ami           = "${var.ami_id}"
   instance_type = "${var.instance_type}"
 
   tags {
-    Name  = "${var.name}-${count.index}"
+    Name  = "${var.name}"
     Owner = "${var.owner}"
     TTL   = "${var.ttl}"
   }
