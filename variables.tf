@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "name" {
   description = "TFE_Deployment"
-  default     = ""
+  default     = "TFE_Deployment"
 }
 
 variable "owner" {
@@ -40,10 +40,10 @@ variable "user_data" {
 
 variable subnet_id {
   description = "default subnet for EC2 instance within specified VPC"
-  default     = ""
+  default     = "subnet-0ef9e96b"
 }
 
 variable "security_group_id" {
   type    = "list"
-  default = [""]
+  default = ["sg-adf4b6c9"]
 }
