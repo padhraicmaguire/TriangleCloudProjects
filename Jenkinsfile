@@ -13,10 +13,10 @@ pipeline {
     stage('Create .terraformrc') {
       steps {
         sh 'echo ~'
-        sh '''writeFile(file: "$HOME/.terraformrc", text: """
+        sh '''writeFile file: "$HOME/.terraformrc", text: """
                     credentials "app.terraform.io" {
                     token = "183GA0jz8BfZlw.atlasv1.kMyNTXMmEC8nDoS8ykL3eE9tKjkub6R1LzOkTz6K9el38zSH4iyOB2jjmaBhZPxLyn0"
-                     } """ )'''
+                     } """ '''
       }
     }
 
